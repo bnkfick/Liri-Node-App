@@ -14,6 +14,9 @@
 
 *I added an inquirer that prompts the user to choose 1 of the 4 commands and continue until the user doesn't want to search any more*
 
+
+![Liri Gif](liri-bot-screen.png)
+
 **What Each Command Does**
 
 
