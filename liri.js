@@ -75,7 +75,7 @@ function processCommand(command, term) {
             doWhatItSays();
             break;
         default:
-            logIt("Invalid Instruction");
+            logIt("Invalid Instruction: " + command);
             console.log("I don't know what to do");
     }
 }
@@ -207,9 +207,10 @@ function getMovieInfo(movie) {
         movie = "Mr. Nobody";
     }
 
-    var movieName = movie.split(' ').join('+'); console.log(movieName);
+    var movieName = movie.split(' ').join('+'); 
+    //console.log(movieName);
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
-    console.log(queryUrl);
+    //console.log(queryUrl);
 
     axios.get(queryUrl).then(
         function (response) {

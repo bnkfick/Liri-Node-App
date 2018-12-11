@@ -1,3 +1,9 @@
+
+Artist: N.E.R.D, Rihanna, Pharrell Williams
+Song: Lemon
+Link: https://open.spotify.com/track/4PpuH4mxL0rD35mOWaLoKS
+Album: NO ONE EVER REALLY DIES
+----------------------------------
 Title:			The Santa Clause 3: The Escape Clause
 Year:			2006
 IMDB Rating:		
@@ -7,11 +13,561 @@ Language:		English
 Plot:			Santa, aka Scott Calvin, is faced with double-duty: how to keep his new family happy, and how to stop Jack Frost from taking over Christmas.
 Actors:			Tim Allen, Elizabeth Mitchell, Eric Lloyd, Judge Reinhold
 ----------------------------------
-Invalid Instruction
+
+Artist: Ed Sheeran
+Song: Castle on the Hill
+Link: https://open.spotify.com/track/6PCUP3dWmTjcTtXY02oFdT
+Album: ÷ (Deluxe)
 ----------------------------------
 
-Artist: N.E.R.D, Rihanna, Pharrell Williams
-Song: Lemon
-Link: https://open.spotify.com/track/4PpuH4mxL0rD35mOWaLoKS
-Album: NO ONE EVER REALLY DIES
+Band: Shawn Mendes
+Date: 03/07/2019
+Name: Ziggo Dome
+City: Nieuw-amsterdam
+Region: 
+Country: Netherlands
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/08/2019
+Name: Ziggo Dome
+City: Nieuw-amsterdam
+Region: 
+Country: Netherlands
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/10/2019
+Name: Antwerps Sportpaleis
+City: Antwerp
+Region: 
+Country: Belgium
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/11/2019
+Name: Mercedes-Benz Arena
+City: Berlin-friedrichshain
+Region: 
+Country: Germany
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/13/2019
+Name: Oslo Spektrum Arena
+City: Oslo
+Region: 
+Country: Norway
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/15/2019
+Name: Ericsson Globe
+City: Stockholm
+Region: 
+Country: Sweden
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/16/2019
+Name: Royal Arena
+City: Copenhagen
+Region: 
+Country: Denmark
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/18/2019
+Name: Lanxess Arena
+City: Köln
+Region: 
+Country: Germany
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/19/2019
+Name: Accorhotels Arena
+City: Paris
+Region: 
+Country: France
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/21/2019
+Name: Olympiahalle
+City: Munich
+Region: 
+Country: Germany
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/23/2019
+Name: Unipol Arena
+City: Bologna
+Region: 
+Country: Italy
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/24/2019
+Name: Pala Alpitour
+City: Turin
+Region: 
+Country: Italy
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/26/2019
+Name: Palau Sant Jordi
+City: Barcelona
+Region: 
+Country: Spain
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/28/2019
+Name: Altice Arena
+City: Lisbon
+Region: 
+Country: Portugal
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/30/2019
+Name: SUD DE FRANCE ARENA
+City: Montpellier-de-medillan
+Region: 
+Country: France
+----------------------------------
+
+Band: Shawn Mendes
+Date: 03/31/2019
+Name: Hallenstadion
+City: Zürich
+Region: 
+Country: Switzerland
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/02/2019
+Name: Tauron Arena Krakow
+City: Cracow
+Region: 
+Country: Poland
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/03/2019
+Name: Wiener Stadthalle
+City: Vienna
+Region: 
+Country: Austria
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/06/2019
+Name: SSE Hydro
+City: Glasgow
+Region: 
+Country: United Kingdom
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/07/2019
+Name: Manchester Arena
+City: Manchester
+Region: 
+Country: United Kingdom
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/09/2019
+Name: Barclaycard Arena
+City: Birmingham
+Region: 
+Country: United Kingdom
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/10/2019
+Name: First Direct Arena
+City: Leeds
+Region: 
+Country: United Kingdom
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/13/2019
+Name: 3Arena
+City: Dublin
+Region: 
+Country: Ireland
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/14/2019
+Name: 3Arena
+City: Dublin
+Region: 
+Country: Ireland
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/16/2019
+Name: The O2 Arena
+City: London
+Region: 
+Country: United Kingdom
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/17/2019
+Name: The O2 Arena
+City: London
+Region: 
+Country: United Kingdom
+----------------------------------
+
+Band: Shawn Mendes
+Date: 04/19/2019
+Name: The O2 Arena
+City: London
+Region: 
+Country: United Kingdom
+----------------------------------
+
+Band: Shawn Mendes
+Date: 06/12/2019
+Name: Moda Center
+City: Portland
+Region: Region: OR
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 06/14/2019
+Name: Rogers Arena
+City: Vancouver
+Region: 
+Country: Canada
+----------------------------------
+
+Band: Shawn Mendes
+Date: 06/16/2019
+Name: Rogers Place
+City: Edmonton
+Region: 
+Country: Canada
+----------------------------------
+
+Band: Shawn Mendes
+Date: 06/19/2019
+Name: Bell MTS Place
+City: Winnipeg
+Region: 
+Country: Canada
+----------------------------------
+
+Band: Shawn Mendes
+Date: 06/21/2019
+Name: Xcel Energy Center
+City: St Paul
+Region: Region: MN
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 06/22/2019
+Name: Wells Fargo Arena
+City: Des Moines
+Region: Region: IA
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 06/27/2019
+Name: Allstate Arena
+City: Chicago
+Region: Region: IL
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 06/30/2019
+Name: Enterprise Center
+City: Saint Louis
+Region: Region: MO
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/02/2019
+Name: Pepsi Center
+City: Denver
+Region: Region: CO
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/08/2019
+Name: Valley View Casino Center
+City: San Diego
+Region: Region: CA
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/05/2019
+Name: Staples Center
+City: Los Angeles
+Region: Region: CA
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/09/2019
+Name: Gila River Arena
+City: Glendale
+Region: Region: AZ
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/11/2019
+Name: Golden 1 Center
+City: Sacramento
+Region: Region: CA
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/13/2019
+Name: Oracle Arena
+City: Oakland
+Region: Region: CA
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/16/2019
+Name: Vivint Smart Home Arena
+City: Salt Lake City
+Region: Region: UT
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/19/2019
+Name: Sprint Center
+City: Kansas City
+Region: Region: MO
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/20/2019
+Name: BOK Center
+City: Tulsa
+Region: Region: OK
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/22/2019
+Name: American Airlines Center
+City: Dallas
+Region: Region: TX
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/23/2019
+Name: AT&T Center
+City: San Antonio
+Region: Region: TX
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/25/2019
+Name: Toyota Center
+City: Houston
+Region: Region: TX
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/27/2019
+Name: Amalie Arena
+City: Tampa
+Region: Region: FL
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/28/2019
+Name: AmericanAirlines Arena
+City: Miami
+Region: Region: FL
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/30/2019
+Name: Amway Center
+City: Orlando
+Region: Region: FL
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 07/31/2019
+Name: Philips Arena
+City: Atlanta
+Region: Region: GA
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 08/05/2019
+Name: Little Caesars Arena
+City: Detroit
+Region: Region: MI
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 08/02/2019
+Name: Bridgestone Arena
+City: Nashville
+Region: Region: TN
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 08/06/2019
+Name: PPG Paints Arena
+City: Pittsburgh
+Region: Region: PA
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 08/10/2019
+Name: Prudential Center
+City: Newark
+Region: Region: NJ
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 08/13/2019
+Name: Capital One Arena
+City: Washington
+Region: Region: DC
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 08/15/2019
+Name: TD Garden
+City: Boston
+Region: Region: MA
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 08/21/2019
+Name: Bell Centre
+City: Montreal
+Region: 
+Country: Canada
+----------------------------------
+
+Band: Shawn Mendes
+Date: 08/24/2019
+Name: Barclays Center
+City: Brooklyn
+Region: Region: NY
+Country: United States
+----------------------------------
+
+Band: Shawn Mendes
+Date: 09/06/2019
+Name: Rogers Centre
+City: Toronto
+Region: 
+Country: Canada
+----------------------------------
+
+Band: Shawn Mendes
+Date: 10/23/2019
+Name: Perth Arena 
+City: Perth
+Region: 
+Country: Australia
+----------------------------------
+
+Band: Shawn Mendes
+Date: 10/26/2019
+Name: Adelaide Entertainment Centre
+City: Adelaide
+Region: 
+Country: Australia
+----------------------------------
+
+Band: Shawn Mendes
+Date: 10/29/2019
+Name: Rod Laver Arena
+City: Melbourne
+Region: 
+Country: Australia
+----------------------------------
+
+Band: Shawn Mendes
+Date: 10/30/2019
+Name: Rod Laver Arena
+City: Melbourne
+Region: 
+Country: Australia
+----------------------------------
+
+Band: Shawn Mendes
+Date: 10/31/2019
+Name: Rod Laver Arena
+City: Melbourne
+Region: 
+Country: Australia
+----------------------------------
+
+Band: Shawn Mendes
+Date: 11/02/2019
+Name: Qudos Bank Arena
+City: Sydney
+Region: 
+Country: Australia
+----------------------------------
+
+Band: Shawn Mendes
+Date: 11/03/2019
+Name: Qudos Bank Arena
+City: Sydney
+Region: 
+Country: Australia
+----------------------------------
+
+Band: Shawn Mendes
+Date: 11/06/2019
+Name: Entertainment Centre
+City: Brisbane
+Region: 
+Country: Australia
+----------------------------------
+
+Band: Shawn Mendes
+Date: 11/09/2019
+Name: Spark Arena
+City: Auckland
+Region: 
+Country: New Zealand
 ----------------------------------
