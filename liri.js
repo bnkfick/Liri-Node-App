@@ -117,7 +117,7 @@ function getConcertInfo(band) {
 
                     var region = '';
                     if (data[i].venue.region !== "") {
-                        region = "Region: " + data[i].venue.region;
+                        region = data[i].venue.region;
                     }
 
                     var concertData =

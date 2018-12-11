@@ -1689,3 +1689,80 @@ Song: Party & Bullshit In The USA
 Link: https://open.spotify.com/track/1Yt78wXs4KUeMrOxZu8dQT
 Album: Mashed Up Summer Of 2010
 ----------------------------------
+
+Artist: Ace of Base
+Song: The Sign
+Link: https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+Album: The Sign (US Album) [Remastered]
+----------------------------------
+
+Artist: Backstreet Boys
+Song: I Want It That Way
+Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+Album: The Hits--Chapter One
+----------------------------------
+
+Artist: Imagine Dragons
+Song: Radioactive
+Link: https://open.spotify.com/track/4G8gkOterJn0Ywt6uhqbhp
+Album: Night Visions
+----------------------------------
+Title:			Bohemian Rhapsody
+Year:			2018
+IMDB Rating:		
+Rotten Tomatoes Rating:	
+Country:		UK, USA
+Language:		English
+Plot:			A chronicle of the years leading up to Queen's legendary appearance at the Live Aid (1985) concert.
+Actors:			Rami Malek, Lucy Boynton, Gwilym Lee, Ben Hardy
+----------------------------------
+
+Artist: Queen
+Song: We Are The Champions - Remastered 2011
+Link: https://open.spotify.com/track/7ccI9cStQbQdystvc6TvxD
+Album: News Of The World (Deluxe Remastered Version)
+----------------------------------
+Title:			Titanic
+Year:			1997
+IMDB Rating:		
+Rotten Tomatoes Rating:	
+Country:		USA
+Language:		English, Swedish
+Plot:			A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+Actors:			Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
+----------------------------------
+Title:			Maid in Manhattan
+Year:			2002
+IMDB Rating:		
+Rotten Tomatoes Rating:	
+Country:		USA
+Language:		English, French, Spanish
+Plot:			A Senatorial candidate falls for a hotel maid, thinking she is a socialite, when he sees her trying on a wealthy woman's dress.
+Actors:			Jennifer Lopez, Ralph Fiennes, Natasha Richardson, Stanley Tucci
+----------------------------------
+Title:			Taken
+Year:			2008
+IMDB Rating:		
+Rotten Tomatoes Rating:	
+Country:		France, USA
+Language:		English, French, Albanian, Arabic
+Plot:			A retired CIA agent travels across Europe and relies on his old skills to save his estranged daughter, who has been kidnapped while on a trip to Paris.
+Actors:			Liam Neeson, Maggie Grace, Leland Orser, Jon Gries
+----------------------------------
+Title:			Taken 3
+Year:			2014
+IMDB Rating:		
+Rotten Tomatoes Rating:	
+Country:		France, USA, Spain
+Language:		English, Russian
+Plot:			Ex-government operative Bryan Mills is accused of a ruthless murder he never committed or witnessed. As he is tracked and pursued, Mills brings out his particular set of skills to find the true killer and clear his name.
+Actors:			Liam Neeson, Forest Whitaker, Famke Janssen, Maggie Grace
+----------------------------------
+
+Band: CHARLIE PUTH
+Date: 12/13/18
+Name: Beacon Theatre
+City: New York
+Region: Region: NY
+Country: United States
+----------------------------------
