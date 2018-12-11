@@ -7,7 +7,7 @@ var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 var axios = require("axios");
 var inquirer = require("inquirer");
-
+var moment = require('moment');
 
 function processCommand(command, term) {
 
@@ -110,10 +110,10 @@ function getConcertInfo(band) {
                 //@todo replace with moment.js
                 for (i = 0; i < data.length; i++) {
                     var dTime = data[i].datetime;
-                    var month = dTime.substring(5, 7);
-                    var year = dTime.substring(0, 4);
-                    var day = dTime.substring(8, 10);
-                    var dateFormatted = month + "/" + day + "/" + year
+
+                    var eventDate = dTime.substring(5, 7) + "/" + dTime.substring(8, 10) + "/" + dTime.substring(0, 4);
+                    var dateFormat = "MM/DD/YYYY";
+                    var convertedDate = moment(eventDate, dateFormat);
 
                     var region = '';
                     if (data[i].venue.region !== "") {
@@ -122,7 +122,7 @@ function getConcertInfo(band) {
 
                     var concertData =
                         "\nBand: " + band +
-                        "\nDate: " + dateFormatted +
+                        "\nDate: " + convertedDate.format("MM/DD/YY") +
                         "\nName: " + data[i].venue.name +
                         "\nCity: " + data[i].venue.city +
                         "\nRegion: " + region +
@@ -147,10 +147,10 @@ function getConcertInfo(band) {
 function getSongInfo(song) {
     //console.log("getSongInfo");
     var songName = song.replace(" ", "+");
-
+    //console.log("song", song);
     // If no song is provided then your program will default to "The Sign" by Ace of Base.
-    if (!song || song == "") {
-        song = "The Sign, Ace of Base";
+    if (!song || song == null) {
+        songName = "The Sign, Ace of Base";
     }
     spotify.search({ type: 'track', query: songName, limit: 1 }, function (err, data) {
         if (err) {
