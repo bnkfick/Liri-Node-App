@@ -1,29 +1,29 @@
 require("dotenv").config();
 
-// Grab the axios package...
-var axios = require("axios");
-// fs is a core Node package for reading and writing files
 var fs = require("fs");
+var keys = require("./key.js");
+var request = require('request');
+var Spotify = require('node-spotify-api');
+var spotify = new Spotify(keys.spotify);
+var axios = require("axios");
+var inquirer = require("inquirer");
 
-
-processCommand();
-
-function processCommand() {
-    var command = process.argv[2];
+//NOT BEING USED...I GOT FANCY, may come back to this
+function processCommand(command, parameters) {
 
     switch (command) {
         case 'concert-this':
             // node liri.js concert-this < artist / band name here >
-            getConcertInfo();
+            bandsInTown();
             console.log("concert-this");
         case 'spotify-this-song':
             // node liri.js spotify-this-song '<song name here>'
-            getSongInfo();
+            songInfo();
             console.log("spotify-this-song");
             break;
         case 'movie-this':
             // node liri.js movie-this '<movie name here>'
-            getMovieInfo();
+            movieInfo();
             console.log("movie-this");
             break;
         case 'do-what-it-says':
@@ -32,6 +32,7 @@ function processCommand() {
             console.log("do-what-it-says");
             break;
         default:
+            logError("Invalid Instruction");
             console.log("I don't know what to do");
     }
 }
@@ -40,10 +41,9 @@ function processCommand() {
 //=================================================================================================//
 
 //=================================================================================================//
-function getConcertInfo() {
-    console.log("getSongInfo");
-    //Does this require quotes?
-
+function getConcertInfo(band) {
+    console.log("bandsInTown", band);
+    var bandName = band.replace(' ', '+');
     //     This will search the Bands in Town Artist Events API("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp") for an artist and render the following information about each event to the terminal:
 
     // Name of the venue
@@ -53,9 +53,88 @@ function getConcertInfo() {
     var venueLocation = "VENUE LOCATION: ";
     var dateOfEvent = "DATE OF EVENT: MM/DD/YYYY";
 
+
+    var queryUrl = "https://rest.bandsintown.com/artists/" + bandName + "/events?app_id=codecademy";
+    console.log(queryUrl);
+
+    request(queryUrl, function (error, response, body) {
+
+        if (!error && response.statusCode === 200) {
+            var data = JSON.parse(body);
+            //@todo replace with moment.js
+            for (i = 0; i < data.length; i++) {
+                var dTime = data[i].datetime;
+                var month = dTime.substring(5, 7);
+                var year = dTime.substring(0, 4);
+                var day = dTime.substring(8, 10);
+                var dateFormatted = month + "/" + day + "/" + year
+
+                if (data[i].venue.region !== "") {
+                    region = "Region: " + data[i].venue.region;
+                }
+
+                var concertData =
+                    "\nBand: " + band +
+                    "\nDate: " + dateFormatted +
+                    "\nName: " + data[i].venue.name +
+                    "\nCity: " + data[i].venue.city +
+                    "\nRegion: " + region +
+                    "\nCountry: " + data[i].venue.country;
+
+                console.log(concertData);
+                logIt(concertData);
+                
+            }
+            anotherSearch();
+        }
+    });
 }
 
-function getSongInfo() {
+
+
+
+
+
+function getSongInfo(song) {
+    console.log("getSongInfo");
+    var songName = song.replace(" ", "+");
+
+    // spotify.search({ type: 'track', query: 'All the Small Things' }, function (err, data) {
+    //     if (err) {
+    //         return console.log('Error occurred: ' + err);
+    //     }
+    //     console.log(data);
+    // });
+    if (!song || song == "") {
+        song = "The Sign, Ace of Base";
+    }
+    spotify.search({ type: 'track', query: songName, limit: 1 }, function (err, data) {
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        }
+
+        if (data.tracks.items[0] == undefined) {
+            console.log("No Song Found");
+            return;
+        }
+
+        var artist = data.tracks.items[0].artists[0].name;
+
+        for (var i = 1; i < data.tracks.items[0].artists.length; i++) {
+            artist += ", " + data.tracks.items[0].artists[i].name;
+        }
+
+        var songData =
+            "Song: " + data.tracks.items[0].name +
+            "\nArtist: " + artist +
+            "\nAlbum: " + data.tracks.items[0].album.name +
+            "\nLink: " + data.tracks.items[0].external_urls.spotify;
+        console.log(songData);
+        logIt(songData);
+        anotherSearch();
+
+    })
+
     // This will show the following information about the song in your terminal/bash window
 
     // Artist(s)
@@ -66,40 +145,50 @@ function getSongInfo() {
     // If no song is provided then your program will default to "The Sign" by Ace of Base.
 }
 //=================================================================================================//
-function getMovieInfo() {
+function getMovieInfo(movie) {
 
-    // If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
-    // If you haven't watched "Mr. Nobody," then you should: http://www.imdb.com/title/tt0485947/
-    // It's on Netflix!
+    if (!movie) {
+        console.log("You didn't type in a movie to search for, so the program searched for \'Mr. Nobody.\'");
+        console.log("If you haven\'t watched \"Mr. Nobody,\" then you should: http://www.imdb.com/title/tt0485947/");
+        console.log("It\'s on Netflix!");
+        movie = "Mr. Nobody";
+    }
 
-    // You'll use the axios package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use trilogy.
-
-    // This line is just to help us debug against the actual URL.
-    movieName = process.argv.slice(3).join("+");
-    console.log(movieName);
-    // Then run a request with axios to the OMDB API with the movie specified
+    var movieName = movie.replace(" ", "+");
+    //console.log(movieName);
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+    //console.log(queryUrl);
 
-    console.log(queryUrl);
-    // Then create a request with axios to the queryUrl
-    // ...
     // Then run a request with axios to the OMDB API with the movie specified
     axios.get(queryUrl).then(
         function (response) {
-            // If the request with axios is successful
-            // Then log the Release Year for the movie
-            // ...
-            console.log("The movie: " + movieName + " came out in: ", response.data.Year);
-            // This will output the following information to your terminal/bash window:
-            //    * Title of the movie.
-            //    * Year the movie came out.
-            //    * IMDB Rating of the movie.
-            //    * Rotten Tomatoes Rating of the movie.
-            //    * Country where the movie was produced.
-            //    * Language of the movie.
-            //    * Plot of the movie.
-            //    * Actors in the movie.
+
+            var rtRating = '';
+            var imdbRating = ''
+            for (var i = 0; i < response.data.Ratings.length; i++) {
+                if (response.data.Ratings[i].Source == "Rotten Tomatoes") {
+                    rtRating = response.data.Ratings[i].Value;
+                }
+                else if (response.data.Ratings[i].Source == "Internet Movie Database") {
+                    imdbRating = response.data.Ratings[i].Value;
+                }
+            }
+
+            var movieData =
+                "Title:\t\t\t" + response.data.Title +
+                "\nYear:\t\t\t" + response.data.Year +
+                "\nIMDB Rating:\t\t" + imdbRating +
+                "\nRotten Tomatoes Rating:\t" + rtRating +
+                "\nCountry:\t\t" + response.data.Country +
+                "\nLanguage:\t\t" + response.data.Language +
+                "\nPlot:\t\t\t" + response.data.Plot +
+                "\nActors:\t\t\t" + response.data.Actors;
+
+            console.log(movieData);
+            logIt(movieData);
+            anotherSearch();
         }
+
     ).catch(function (error) {
         if (error.response) {
             // The request was made and the server responded with a status code
@@ -148,3 +237,134 @@ function doWhatItSays() {
 
     });
 }
+
+function logIt(dataToLog) {
+    var divider = "\n----------------------------------\n"
+    //console.log(dataToLog);
+    fs.appendFile('log.txt', dataToLog + divider, function (err) {
+        if (err) {
+            var errMsg = 'Error logging data to file: ' + err;
+            logIt(errMsg);
+            return errMsg;
+        }
+    });
+}
+
+// calls the function initLiri() to start the code
+initLiri();
+
+// Function that will start the request process based on user input
+// Then will ...
+function initLiri() {
+    //console.log("\n--------\initLiri()\n---------");
+    askQuestion();
+}
+
+
+// Function to run the cycle of liri questions.
+function askQuestion() {
+    //console.log("\n--------\startLiri()\n---------");
+    inquirer
+        .prompt([
+            {
+                type: 'list',
+                name: 'command',
+                message: 'What do you want me to look up for you?',
+                choices: ['A Concert with Bands in Town', 'A Song with Spotify', 'A Movie with OMBD'],
+
+            }
+        ])
+        .then(function (inquirerResponse) {
+
+            console.log("Command: " + inquirerResponse.command);
+            switch (inquirerResponse.command) {
+                case 'A Concert with Bands in Town':
+                case 'concert-this':
+                    // node liri.js concert-this < artist / band name here >
+                    inquirer.prompt([
+                        {
+                            type: 'input',
+                            name: 'concert',
+                            message: 'What concert should I search for?',
+                        }
+                    ]).then(function (inquirerResponse) {
+                        getConcertInfo(inquirerResponse.concert);
+                    });
+
+                    //console.log("concert-this");
+                    break;
+
+                case 'A Song with Spotify':
+                case 'spotify-this-song':
+                    // node liri.js spotify-this-song '<song name here>'
+                    inquirer.prompt([
+                        {
+                            type: 'input',
+                            name: 'song',
+                            message: 'What song should I search for?',
+                        }
+                    ]).then(function (inquirerResponse) {
+                        getSongInfo(inquirerResponse.song);
+
+                    });
+                    //console.log("spotify-this-song");
+                    break;
+
+                case 'A Movie with OMBD':
+                case 'movie-this':
+                    // node liri.js movie-this '<movie name here>'
+                    inquirer.prompt([
+                        {
+                            type: 'input',
+                            name: 'movie',
+                            message: 'What movie should I search for?',
+                        }
+                    ]).then(function (inquirerResponse) {
+                        getMovieInfo(inquirerResponse.movie);
+                    });
+                    //console.log("movie-this");
+                    break;
+
+                case 'do-what-it-says':
+                    //node liri.js do-what-it-says
+                    inquirer.prompt([
+                        {
+                            type: 'input',
+                            name: 'parameters',
+                            message: 'What movie should I search for?',
+                        }
+                    ]).then(function (inquirerResponse) {
+                        doWhatItSays(inquirerResponse.parameters);
+                    });
+                    console.log("do-what-it-says");
+                    break;
+
+                default:
+                    logError("Invalid Instruction");
+                    console.log("I don't know what to do");
+            }
+
+
+        });
+}
+
+function anotherSearch() {
+    inquirer.prompt([
+        {
+            type: 'confirm',
+            name: 'confirmed',
+            message: 'Do you want to do another Search?',
+            default: true
+        }]).then(function (reply) {
+            console.log("reply : ", reply);
+            if (reply.confirmed) {
+                console.log("Ok,  another");
+                askQuestion();
+            } else {
+                console.log("Ok,  Goodbye");
+                return;
+            }
+
+        });
+}
+
