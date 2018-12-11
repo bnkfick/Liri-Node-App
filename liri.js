@@ -93,8 +93,8 @@ function processCommand(command, term) {
 // Log concerts to log.txt if there are results
 //=================================================================================================//
 function getConcertInfo(band) {
-    //console.log("bandsInTown", band);
-    var bandName = band.replace(' ', '+');
+
+    var bandName = band.split(' ').join('+'); 
 
     var queryUrl = "https://rest.bandsintown.com/artists/" + bandName + "/events?app_id=codecademy";
     //console.log(queryUrl);
@@ -107,7 +107,7 @@ function getConcertInfo(band) {
             if (!Array.isArray(data) || !data.length) {
                 console.log("NO CONCERTS FOUND");
             } else {
-                //@todo replace with moment.js
+
                 for (i = 0; i < data.length; i++) {
                     var dTime = data[i].datetime;
 
@@ -145,9 +145,9 @@ function getConcertInfo(band) {
 // Log Data to the Log file log.txt
 //=================================================================================================//
 function getSongInfo(song) {
-    //console.log("getSongInfo");
-    var songName = song.replace(" ", "+");
-    //console.log("song", song);
+
+    var songName = song.split(' ').join('+'); 
+
     // If no song is provided then your program will default to "The Sign" by Ace of Base.
     if (!song || song == null) {
         songName = "The Sign, Ace of Base";
